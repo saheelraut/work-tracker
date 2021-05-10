@@ -9,7 +9,7 @@ const Work = props => (
         <td>{props.work.duration}</td>
         <td>{props.work.date.substring(0, 10)}</td>
         <td>
-            <Link to={"/edit/" + props.work._id}>edit</Link> | <a href="#" onClick={() => { props.deleteWork(props.work._id) }}>delete</a>
+            <Link to={"/edit/" + props.work._id}>edit</Link> | <a href="/#" onClick={() => { props.deleteWork(props.work._id) }}>delete</a>
         </td>
     </tr>
 )
